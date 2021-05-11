@@ -1,0 +1,14 @@
+1
+{"type":"INQUIRY","id":"20210511020108000399"}
+
+1
+{"type":"CANCEL","id":"20210511142122000701","amount":10000}
+
+1
+{"type":"PAYMENT","card_num":1234567812345678,"expire":"1124","cvc":"908","month_plan":12,"amount":20000}
+
+1
+{"type":"CANCEL","id":"20210511132210000654","amount":1000}
+
+1
+{"type":"PAYMENT","card_num":1234567812345678,"expire":"1124","cvc":"345","month_plan":12,"amount":11000}
