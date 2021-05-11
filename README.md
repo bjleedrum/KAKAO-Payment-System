@@ -21,7 +21,7 @@
 
 최초 금액 필드가 있어 최초와 현재 잔액을 쉽게 비교할 수 있다.
 ![image](https://user-images.githubusercontent.com/83941428/117798259-eb21ef00-b28b-11eb-860b-83c594d71eb4.png)
- - UNIQUE_ID : 유니크 키
+ - UNIQUE_ID : 마스터 테이블 유니크 키
  - FIRST_AMOUNT : 최초 결제금액 (불변)
  - FIRST_VAT : 최초 부가가치세 (불변)
  - CURRENT_AMOUNT : 현재 결제 잔액
@@ -33,7 +33,17 @@
 
 
 **[Payment History]**
-![image](https://user-images.githubusercontent.com/83941428/117800014-b44cd880-b28d-11eb-8ad5-325a8e02e150.png)
+![image](https://user-images.githubusercontent.com/83941428/117800439-19083300-b28e-11eb-9c0d-d436b442b6c3.png)
+ - HISTORY_ID : 히스토리 테이블 유니크 키
+ - TYPE : PAYMENT(결제) / CANCEL(취소)
+ - UNIQUE_ID : 마스터 테이블 조인 키
+ - AMOUNT : 금액
+ - VAT : 부가가치세
+ - DATA : 카드사에 보내지는 인터페이스 전문
+ - CREATER : 최초 생성자
+ - CREATE_DT : 최초 생성일시
+ - CHANGER : 변경자
+ - CHANGE_DT : 변경일시
 
 
 
