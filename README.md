@@ -3,10 +3,28 @@
  - 결제
  - 결제 취소
  - 결제정보 조회
+
 # 1. 개발 프레임워크
+ - Eclipse (Java)
+ - H2 Embeded Data Base
+
 # 2. 테이블 설계
+ - Payment Master
+![image](https://user-images.githubusercontent.com/83941428/117798259-eb21ef00-b28b-11eb-860b-83c594d71eb4.png)
+ - UNIQUE_ID
+ - FIRST_AMOUNT
+ - FIRST_VAT
+ - CURRENT_AMOUNT
+ - CURRENT_VAT
+ - CREATER
+ - CREATE_DT
+ - CHANGER
+ - CHANGE_DT 
+
 # 3. 문제해결 전략
+
 # 4. 실행방법
+
 # 5. 맺음말
 이렇게 혼자서 DB부터 프레임웍, 소스, 테스트케이스, 빌드, 배포, 설명... 다 해본적이 얼마만인지 ㅎ
 
