@@ -5,6 +5,7 @@
  - 결제정보 조회
 
 # 1. 개발 프레임워크
+ - Windows 10
  - Eclipse (Java)
 ![image](https://user-images.githubusercontent.com/83941428/117798854-81561500-b28c-11eb-84d6-843803d1917f.png)
 
@@ -12,17 +13,29 @@
 ![image](https://user-images.githubusercontent.com/83941428/117798966-9d59b680-b28c-11eb-821a-a19f950325b5.png)
 
 # 2. 테이블 설계
- - Payment Master
+**[Payment Master]**
+
+결제금액 원장. 결제할때 한줄 생성된다.
+
+이후에 데이터 변경시(취소) 현재 금액들이 업데이트 된다.
+
+최초 금액 필드가 있어 최초와 현재 잔액을 쉽게 비교할 수 있다.
 ![image](https://user-images.githubusercontent.com/83941428/117798259-eb21ef00-b28b-11eb-860b-83c594d71eb4.png)
- - UNIQUE_ID
- - FIRST_AMOUNT
- - FIRST_VAT
- - CURRENT_AMOUNT
- - CURRENT_VAT
- - CREATER
- - CREATE_DT
- - CHANGER
- - CHANGE_DT 
+ - UNIQUE_ID : 유니크 키
+ - FIRST_AMOUNT : 최초 결제금액 (불변)
+ - FIRST_VAT : 최초 부가가치세 (불변)
+ - CURRENT_AMOUNT : 현재 결제 잔액
+ - CURRENT_VAT : 현재 부가가치세 잔액
+ - CREATER : 최초 생성자
+ - CREATE_DT : 최초 생성일시
+ - CHANGER : 변경자
+ - CHANGE_DT : 변경일시
+
+
+**[Payment History]**
+![image](https://user-images.githubusercontent.com/83941428/117800014-b44cd880-b28d-11eb-8ad5-325a8e02e150.png)
+
+
 
 # 3. 문제해결 전략
 
