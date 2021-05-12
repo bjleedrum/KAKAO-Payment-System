@@ -102,15 +102,20 @@ DB가 제 로컬에만 설치되어 있어 다른사람들도 실행할 수 있�
 * test_B : 결제 후 간단 취소 테스트, 먼저 결제를 생성하고 그 관리번호로 취소를 해야한다
 
 1. 먼저 test_temp 를 이용해서 결제 데이터 파일을 만든다.
+
 2. Main.java 에서 실행파일을 test_temp 로 저장하고 실행해서 결제 데이터를 만든다
 
-System.setIn(new FileInputStream("src/test_temp"));
+     System.setIn(new FileInputStream("src/test_temp"));
+
 3. 결과 로그 끝에서 유니크ID를 발췌한다.
 ![image](https://user-images.githubusercontent.com/83941428/117999886-42a18700-b380-11eb-84b0-2669627cd162.png)
+
 4. test_B 파일에 3번의 유니크ID 를 복사해서 붙여넣는다
+
 5. Main.java 에서 실행파일을 test_B 로 저장하고 실행한다
 
-System.setIn(new FileInputStream("src/test_B"));
+     System.setIn(new FileInputStream("src/test_B"));
+
 6. 취소 테스트는 이런식으로 진행한다.
 
 ![image](https://user-images.githubusercontent.com/83941428/118000435-c491b000-b380-11eb-917a-7c6e8af2c7ce.png)
