@@ -103,19 +103,30 @@ DB가 제 로컬에만 설치되어 있어 다른사람들도 실행할 수 있�
 
 1. 먼저 test_temp 를 이용해서 결제 데이터 파일을 만든다.
 2. Main.java 에서 실행파일을 test_temp 로 저장하고 실행해서 결제 데이터를 만든다
-   // 아래 파일에 테스트 케이스를 저장하고 실행한다.
-		 System.setIn(new FileInputStream("src/test_temp"));
+
+System.setIn(new FileInputStream("src/test_temp"));
 3. 결과 로그 끝에서 유니크ID를 발췌한다.
 ![image](https://user-images.githubusercontent.com/83941428/117999886-42a18700-b380-11eb-84b0-2669627cd162.png)
 4. test_B 파일에 3번의 유니크ID 를 복사해서 붙여넣는다
 5. Main.java 에서 실행파일을 test_B 로 저장하고 실행한다
-   // 아래 파일에 테스트 케이스를 저장하고 실행한다.
-		 System.setIn(new FileInputStream("src/test_B"));
-6. 이후 밑의 취소 테스트는 이런식으로 진행한다.
+
+System.setIn(new FileInputStream("src/test_B"));
+6. 취소 테스트는 이런식으로 진행한다.
 
 ![image](https://user-images.githubusercontent.com/83941428/118000435-c491b000-b380-11eb-917a-7c6e8af2c7ce.png)
 
+* test_C : 부분취소 테스트
+![image](https://user-images.githubusercontent.com/83941428/118001036-4eda1400-b381-11eb-9280-af72a06c55ec.png)
 
+* test_D : 부분취소 테스트
+![image](https://user-images.githubusercontent.com/83941428/118001298-91035580-b381-11eb-8d0f-9d930c86b65f.png)
+
+* test_E : 부분취소 테스트
+![image](https://user-images.githubusercontent.com/83941428/118001530-ca3bc580-b381-11eb-929d-de619346eca6.png)
+
+* test_F : 조회/에러 테스트
+![image](https://user-images.githubusercontent.com/83941428/118001667-e93a5780-b381-11eb-8364-e78b0aa257ae.png)
+![image](https://user-images.githubusercontent.com/83941428/118001737-f8210a00-b381-11eb-8e4c-f31dd7bf734b.png)
 
 
 # 5. 맺음말
