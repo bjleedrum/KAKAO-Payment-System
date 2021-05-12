@@ -91,13 +91,30 @@ DB는 H2로 했는데 이번에 처음 써봤습니다.
 # 4. 실행방법
 DB가 제 로컬에만 설치되어 있어 다른사람들도 실행할 수 있는 방법이 있는지는 잘 모르겠습니다. 제가 이런쪽에는 좀 약해서..
 
-이클립스 프로젝트는 아카이브로 압축한것 첨부했고요,
+개발 관련 모든 자료를 GitHub 에 공유합니다.
 
-혹시 필요할까봐 이클립스에서 사용한 외부 Json, H2 의 jar 파일도 넣어놨습니다.
 
-실행이 가능하다면 이클립스에 있는 test 파일에 테스트 케이스 있으니 main.java 실행하면 됩니다.
+**[실행 화면 캡쳐]**
 
-소스도 개별 파일로 첨부 했습니다.
+* test_A : 결제 테스트
+![image](https://user-images.githubusercontent.com/83941428/117998726-20f3d000-b37f-11eb-9497-77cfcd3027f8.png)
+
+* test_B : 결제 후 간단 취소 테스트, 먼저 결제를 생성하고 그 관리번호로 취소를 해야한다
+
+1. 먼저 test_temp 를 이용해서 결제 데이터 파일을 만든다.
+2. Main.java 에서 실행파일을 test_temp 로 저장하고 실행해서 결제 데이터를 만든다
+   // 아래 파일에 테스트 케이스를 저장하고 실행한다.
+		 System.setIn(new FileInputStream("src/test_temp"));
+3. 결과 로그 끝에서 유니크ID를 발췌한다.
+![image](https://user-images.githubusercontent.com/83941428/117999886-42a18700-b380-11eb-84b0-2669627cd162.png)
+4. test_B 파일에 3번의 유니크ID 를 복사해서 붙여넣는다
+5. Main.java 에서 실행파일을 test_B 로 저장하고 실행한다
+   // 아래 파일에 테스트 케이스를 저장하고 실행한다.
+		 System.setIn(new FileInputStream("src/test_B"));
+6. 이후 밑의 취소 테스트는 이런식으로 진행한다.
+
+![image](https://user-images.githubusercontent.com/83941428/118000435-c491b000-b380-11eb-917a-7c6e8af2c7ce.png)
+
 
 
 
