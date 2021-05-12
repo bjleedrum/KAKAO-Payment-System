@@ -158,5 +158,3 @@ Java 소스는 export 한것도 있고한데, DB를 다른사람들도 실행할
 
 
 감사합니다.
-
-Best Regards. Luke.
